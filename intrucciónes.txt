@@ -14,21 +14,21 @@ Este proyecto usa:
 CÓMO EJECUTAR EL PROYECTO
 ========================================
 
-1️⃣ Descargar el proyecto desde GitHub
+1️. Descargar el proyecto desde GitHub
    (Botón Code → Download ZIP o git clone)
 
-2️⃣ Abrir una terminal en la carpeta del proyecto.
+2️. Abrir una terminal en la carpeta del proyecto.
 
-3️⃣ Entrar a la carpeta backend:
+3️. Entrar a la carpeta backend:
 
    cd backend
 
-4️⃣ Instalar dependencias
+4️. Instalar dependencias
    (node_modules NO está incluido en GitHub):
 
    npm install
 
-5️⃣ Ejecutar el servidor:
+5. Ejecutar el servidor:
 
    node server.js
 
@@ -36,7 +36,7 @@ Debe aparecer:
 
    Servidor corriendo en http://localhost:3000
 
-⚠️ No cerrar esta terminal.
+No cerrar esta terminal.
 
 ========================================
 PROBAR QUE EL SERVIDOR FUNCIONA
