@@ -1,0 +1,68 @@
+========================================
+PRACTICA 2 - SISTEMA DE GESTIÓN DE TAREAS
+"The Persistence Tasker"
+
+
+Este proyecto es una aplicación Full Stack que utiliza:
+
+- Node.js
+- Express
+- Vue 3
+- JSON para persistencia de datos
+
+========================================
+PASOS PARA EJECUTAR EL PROYECTO
+
+
+1) Abrir una terminal.
+
+2) Entrar a la carpeta backend:
+
+   cd practica-2-tasker/backend
+
+3) Instalar dependencias (solo la primera vez):
+
+   npm install
+
+   Si no existe package.json, ejecutar:
+   npm init -y
+   npm install express cors
+
+4) Ejecutar el servidor:
+
+   node server.js
+
+Debe aparecer:
+
+   Servidor corriendo en http://localhost:3000
+
+IMPORTANTE: No cerrar esta terminal.
+
+========================================
+PROBAR EL BACKEND
+
+
+Abrir navegador y entrar a:
+
+http://localhost:3000/tasks
+
+Debe mostrarse un arreglo JSON:
+[]
+
+Si aparece eso, el servidor está funcionando correctamente.
+
+========================================
+EJECUTAR EL FRONTEND
+
+Ir a la carpeta:
+
+practica-2-tasker/frontend
+
+Abrir el archivo:
+
+index.html
+
+(Se puede abrir con doble clic o con Live Server en VSCode)
+
+========================================
+FIN

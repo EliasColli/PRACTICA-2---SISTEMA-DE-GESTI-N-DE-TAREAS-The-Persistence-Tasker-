@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Persistence Tasker</title>
+    <link rel="stylesheet" href="/frontend/styles.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+
+<div id="app" class="container">
+
+    <div class="card">
+        <h1>- Persistence Tasker -</h1>
+
+        <div class="input-group">
+            <input v-model="newTask" 
+                   @keyup.enter="addTask"
+                   placeholder="Escribe una nueva tarea...">
+            <button @click="addTask">Agregar</button>
+        </div>
+
+        <p v-if="loading" class="loading">Cargando tareas...</p>
+
+        <transition-group name="fade" tag="ul" class="task-list">
+            <li v-for="task in tasks" :key="task.id" class="task-item">
+                <span>{{ task.text }}</span>
+                <button class="delete" @click="deleteTask(task.id)">
+                    ✖
+                </button>
+            </li>
+        </transition-group>
+
+        <p v-if="tasks.length === 0 && !loading" class="empty">
+            No hay tareas todavía. Agrega una tarea :3
+        </p>
+    </div>
+
+</div>
+
+<script src="../frontend/app.js"></script>
+</body>
+</html>
